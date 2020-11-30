@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
           setContentView(R.layout.activity_main);
 
           buttonConversa = findViewById(R.id.buttonConversa);
+          buttonContato = findViewById(R.id.buttonContato);
 
           //Removendo sombra da ActionBar
           getSupportActionBar().setElevation(0);
 
           //Instanciando a classe do fagmento
-          conversasFragment = new ConversasFragment() ;
-
+          conversasFragment = new ConversasFragment();
 
           //Configurando obj para o fragmento - gerenciador de fragmentos() - serve para configurar um fragmento()
           FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -38,7 +38,10 @@ public class MainActivity extends AppCompatActivity {
 
           buttonConversa.setOnClickListener(new View.OnClickListener() {
                @Override
-               public void onClick(View v) {
+               public void onClick(View view) {
+
+                    conversasFragment = new ConversasFragment();
+
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.frameConteudo, conversasFragment);
                     transaction.commit();
@@ -47,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
 
           buttonContato.setOnClickListener(new View.OnClickListener() {
                @Override
-               public void onClick(View v) {
+               public void onClick(View view) {
+
+                    contatosFragment = new ContatosFragment();
+
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
                     transaction.replace(R.id.frameConteudo, contatosFragment);
                     transaction.commit();
