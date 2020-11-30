@@ -14,7 +14,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonConversa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
@@ -25,18 +25,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonContato"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
         android:text="Contatos"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
+        android:id="@+id/frameConteudo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
