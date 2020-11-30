@@ -10,11 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.a25_fragmentes.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ContatosFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class ContatosFragment extends Fragment {
 
      // TODO: Rename parameter arguments, choose names that match
