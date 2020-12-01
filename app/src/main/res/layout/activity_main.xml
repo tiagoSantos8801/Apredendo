@@ -18,17 +18,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
+        android:foreground="?selectableItemBackground"
         android:text="Convresas"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UnusedAttribute" />
 
     <Button
         android:id="@+id/buttonContato"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
+        android:foreground="?selectableItemBackground"
         android:text="Contatos"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
